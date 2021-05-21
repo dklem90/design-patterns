@@ -22,5 +22,15 @@ namespace DuckApp
         {
             _flyBehavior.fly();
         }
+
+        public void setFlyBehavior(IFlyBehavior fb)
+        {
+            _flyBehavior = fb;
+        }
+
+        public void setQuackBehavior(IQuackBehavior qb)
+        {
+            _quackBehavior = qb;
+        }
     }
 }
