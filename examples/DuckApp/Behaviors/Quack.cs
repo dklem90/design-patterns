@@ -8,7 +8,7 @@ namespace DuckApp.Behaviors
     {
         public void quack()
         {
-            Console.WriteLine("Quack Quack Quack...");
+            Console.WriteLine("Quack");
         }
     }
 }
