@@ -1,6 +1,7 @@
 using System;
 
 using DuckApp;
+using DuckApp.Behaviors;
 
 namespace DuckApp
 {
@@ -8,9 +9,11 @@ namespace DuckApp
     {
         public static void Main()
         {
-            Duck mallard = new MallardDuck();
-            mallard.performQuack();
-            mallard.performFly();
+            Duck modelDuck = new ModelDuck();
+            modelDuck.setFlyBehavior(new FlyWithRocketPower());
+            modelDuck.display();
+            modelDuck.performQuack();
+            modelDuck.performFly();
         }
     }
 }
