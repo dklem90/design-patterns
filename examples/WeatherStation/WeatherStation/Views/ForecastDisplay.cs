@@ -21,10 +21,10 @@ namespace WeatherStation.Views
             _weatherData.RegisterObserver(this);
         }
 
-        public void Update(float temperature, float humidity, float pressure)
+        public void Update()
         {
-            _temperature = temperature;
-            _humidity = temperature;
+            _temperature = _weatherData.Temperature;
+            _humidity = _weatherData.Humidity;
             Display();
         }
 

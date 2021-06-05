@@ -20,6 +20,12 @@ namespace WeatherStation.Entity
             _observers = new List<IObserver>();
         }
 
+        public float Temperature { get => _temperature; }
+
+        public float Humidity { get => _humidity; }
+
+        public float Pressure { get => _pressure; }
+
         public void RegisterObserver(IObserver o)
         {
             _observers.Add(o);
@@ -32,9 +38,9 @@ namespace WeatherStation.Entity
 
         public void NotifyObservers()
         {
-            foreach(IObserver observer in _observers)
+            foreach (IObserver observer in _observers)
             {
-                observer.Update(_temperature, _humidity, _pressure);
+                observer.Update();
             }
         }
 
