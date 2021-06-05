@@ -6,8 +6,8 @@ namespace DuckApp
 {
     public abstract class Duck
     {
-        IQuackBehavior _quackBehavior;
-        IFlyBehavior _flyBehavior;
+        public IQuackBehavior _quackBehavior;
+        public IFlyBehavior _flyBehavior;
 
         public Duck() { }
 
@@ -21,6 +21,16 @@ namespace DuckApp
         public void performFly()
         {
             _flyBehavior.fly();
+        }
+
+        public void setFlyBehavior(IFlyBehavior fb)
+        {
+            _flyBehavior = fb;
+        }
+
+        public void setQuackBehavior(IQuackBehavior qb)
+        {
+            _quackBehavior = qb;
         }
     }
 }

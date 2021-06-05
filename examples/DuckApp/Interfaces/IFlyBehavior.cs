@@ -2,8 +2,8 @@ using System;
 
 namespace DuckApp.Interfaces
 {
-    interface IFlyBehavior
+    public interface IFlyBehavior
     {
-        void fly();
+        public void fly();
     }
 }

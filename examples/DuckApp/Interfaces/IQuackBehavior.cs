@@ -1,6 +1,6 @@
 namespace DuckApp.Interfaces
 {
-    interface IQuackBehavior
+    public interface IQuackBehavior
     {
         void quack();
     }
