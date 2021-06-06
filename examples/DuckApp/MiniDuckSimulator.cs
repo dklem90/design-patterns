@@ -1,6 +1,3 @@
-using System;
-
-using DuckApp;
 using DuckApp.Behaviors;
 
 namespace DuckApp
