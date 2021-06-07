@@ -218,6 +218,7 @@ AppPackages/
 !*.[Cc]ache/
 
 # Others
+.vscode
 ClientBin/
 [Ss]tyle[Cc]op.*
 ~$*
