@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace PizzaStore
+﻿namespace PizzaStore
 {
-    class Program
+    class PizzaStoreTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Making pizzas!!!");
         }
     }
 }
